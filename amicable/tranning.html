@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Navbar</title>
+
+  <style>
+    /* Page reset (optional but helpful for teaching) */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Mother div */
+    .navbar {
+      border: 2px solid #000;          /* mother border */
+      padding: 20px 5px 10px;
+      display: flex;                    /* puts children side-by-side */
+      align-items: center;              /* vertically center items */
+      justify-content: space-between;   /* pushes logo left, links right */
+      gap: 12px;
+    }
+
+    /* Child 1: logo area */
+    .navbar-logo {
+      border: 2px dashed #000;          /* child border */
+      padding: 10px 14px;
+      font-weight: 700;
+      min-width: 120px;
+    }
+
+    /* Child 2: nav items container */
+    .navbar-links {
+      border: 2px dashed #000;          /* child border */
+      padding: 10px 14px;
+      display: flex;                    /* puts links in a row */
+      gap: 14px;                        /* spacing between links */
+      align-items: center;
+    }
+
+    /* Individual nav items */
+    .navbar-links a {
+      border: 1px solid #000;           /* border for each item */
+      padding: 8px 10px;
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
+    }
+
+    .navbar-links a:hover {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="food" class="navbar">
+    <div class="navbar-logo">MyLogo</div>
+
+    <div class="navbar-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+</body>
+</html>
